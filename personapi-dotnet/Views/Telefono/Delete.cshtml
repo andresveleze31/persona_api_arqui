@@ -4,27 +4,19 @@
     ViewData["Title"] = "Eliminar Teléfono";
 }
 
-<h1 class="mb-4 text-danger">Eliminar Teléfono</h1>
+<section style="background:#fff0f0; padding:2rem; border-radius:1rem; max-width:700px; margin:auto; border:2px solid #ef4444;">
+    <h2 style="color:#dc2626; text-align:center;">🗑️ Eliminar Teléfono</h2>
+    <p style="text-align:center; margin-top:1rem;">¿Estás seguro que deseas eliminar este teléfono?</p>
 
-<div class="alert alert-warning">¿Estás seguro de que deseas eliminar este teléfono?</div>
+    <div style="background:white; padding:1.5rem; border-radius:0.5rem; margin-top:1rem;">
+        <p><strong>Número:</strong> @Model.Num</p>
+        <p><strong>Operador:</strong> @Model.Oper</p>
+        <p><strong>Dueño:</strong> @Model.Duenio</p>
+    </div>
 
-<div class="card shadow p-4">
-    <dl class="row">
-        <dt class="col-sm-3">Número</dt>
-        <dd class="col-sm-9">@Model.Num</dd>
-
-        <dt class="col-sm-3">Operador</dt>
-        <dd class="col-sm-9">@Model.Oper</dd>
-
-        <dt class="col-sm-3">Dueño</dt>
-        <dd class="col-sm-9">@Model.Duenio</dd>
-    </dl>
-
-    <form asp-action="Delete">
+    <form asp-action="Delete" style="display:flex; justify-content:space-between; margin-top:1.5rem;">
         <input type="hidden" asp-for="Num" />
-        <div class="d-flex justify-content-between mt-3">
-            <button type="submit" class="btn btn-danger">Eliminar</button>
-            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-        </div>
+        <button type="submit" style="background:#dc2626; color:white; border:none; padding:0.6rem 1.2rem; border-radius:0.5rem;">Eliminar</button>
+        <a asp-action="Index" style="background:#6b7280; color:white; text-decoration:none; padding:0.6rem 1.2rem; border-radius:0.5rem;">Cancelar</a>
     </form>
-</div>
+</section>

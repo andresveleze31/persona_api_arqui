@@ -4,25 +4,18 @@
     ViewData["Title"] = "Detalles de Estudio";
 }
 
-<h1 class="mb-4 text-info">Detalles de Estudio</h1>
+<div class="form-box">
+    <h1 style="color:#226a92;">Detalles de Estudio</h1>
 
-<div class="card shadow p-4">
-    <dl class="row">
-        <dt class="col-sm-3">Fecha</dt>
-        <dd class="col-sm-9">@Model.Fecha</dd>
-
-        <dt class="col-sm-3">Universidad</dt>
-        <dd class="col-sm-9">@Model.Univer</dd>
-
-        <dt class="col-sm-3">Cédula Persona</dt>
-        <dd class="col-sm-9">@Model.CcPerNavigation?.Cc</dd>
-
-        <dt class="col-sm-3">ID Profesión</dt>
-        <dd class="col-sm-9">@Model.IdProfNavigation?.Id</dd>
+    <dl>
+        <dt>Fecha:</dt> <dd>@Model.Fecha</dd>
+        <dt>Universidad:</dt> <dd>@Model.Univer</dd>
+        <dt>Cédula Persona:</dt> <dd>@Model.CcPerNavigation?.Cc</dd>
+        <dt>ID Profesión:</dt> <dd>@Model.IdProfNavigation?.Id</dd>
     </dl>
 
-    <div class="d-flex justify-content-between mt-4">
-        <a asp-action="Edit" asp-route-idProf="@Model.IdProf" asp-route-ccPer="@Model.CcPer" class="btn btn-primary">Editar</a>
-        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    <div class="actions">
+        <a asp-action="Edit" asp-route-idProf="@Model.IdProf" asp-route-ccPer="@Model.CcPer" class="btn-primary">Editar</a>
+        <a asp-action="Index" class="btn-secondary">Volver</a>
     </div>
 </div>

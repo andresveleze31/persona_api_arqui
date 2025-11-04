@@ -1,27 +1,21 @@
 @model personapi_dotne.Models.Entities.Profesion
 
 @{
-    ViewData["Title"] = "Eliminar Profesión";
+    ViewData["Title"] = "Eliminar ProfesiÃ³n";
 }
 
-<h1 class="mb-4 text-danger">Eliminar Profesión</h1>
+<section style="background-color:#fff0f0; padding:2rem; border-radius:1rem; max-width:700px; margin:auto; border:2px solid #ff6b6b;">
+    <h2 style="color:#dc3545; text-align:center;">âŒ Eliminar ProfesiÃ³n</h2>
+    <p style="text-align:center;">Â¿Seguro que deseas eliminar esta profesiÃ³n?</p>
 
-<div class="alert alert-warning">¿Estás seguro de que deseas eliminar esta profesión?</div>
+    <div style="background:#fff; padding:1.5rem; border-radius:0.5rem; margin-top:1rem;">
+        <p><strong>Nombre:</strong> @Model.Nom</p>
+        <p><strong>DescripciÃ³n:</strong> @Model.Des</p>
+    </div>
 
-<div class="card shadow p-4">
-    <dl class="row">
-        <dt class="col-sm-3">Nombre</dt>
-        <dd class="col-sm-9">@Model.Nom</dd>
-
-        <dt class="col-sm-3">Descripción</dt>
-        <dd class="col-sm-9">@Model.Des</dd>
-    </dl>
-
-    <form asp-action="Delete">
+    <form asp-action="Delete" style="display:flex; justify-content:space-between; margin-top:1.5rem;">
         <input type="hidden" asp-for="Id" />
-        <div class="d-flex justify-content-between mt-3">
-            <button type="submit" class="btn btn-danger">Eliminar</button>
-            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-        </div>
+        <button type="submit" style="background:#dc3545; color:white; border:none; padding:0.7rem 1.5rem; border-radius:0.5rem;">Eliminar</button>
+        <a asp-action="Index" style="background:#6c757d; color:white; text-decoration:none; padding:0.7rem 1.5rem; border-radius:0.5rem;">Cancelar</a>
     </form>
-</div>
+</section>

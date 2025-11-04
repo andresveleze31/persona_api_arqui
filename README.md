@@ -1,7 +1,6 @@
 # PersonAPI .NET
 
 Una aplicación ASP.NET MVC + Web API para gestionar información de personas, teléfonos, estudios y profesiones, conectada a SQL Server y desplegada en Docker.
-Desarrollado por Juan Diego Perez, Juan Miguel Zuluaga y Samuel Ramirez Alvarez
 
 ## 📦 Requisitos
 
@@ -22,11 +21,6 @@ cd personapi-dotnet
 cd personapi_dotnet
 ```
 
-### ✅ Opción 2: Descargar como `.zip` desde GitHub
-
-1. Ve al repositorio: [https://github.com/rasamuel/personapi-dotnet](https://github.com/rasamuel/personapi-dotnet)
-2. Haz clic en la pestaña **Releases** o selecciona un **tag estable**.
-3. Descarga el archivo `.zip`, extráelo y entra a la carpeta del proyecto.
 
 ```bash
 # Para acceder a la carpeta del proyecto

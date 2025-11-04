@@ -2,48 +2,117 @@
     ViewData["Title"] = "Política de Privacidad";
 }
 
-<div class="container py-5">
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-lg-8">
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <h2 class="card-title text-primary mb-4">
-                        <i class="bi bi-shield-lock-fill me-2"></i>@ViewData["Title"]
-                    </h2>
+<style>
+    body {
+        background-color: #f7f8fa;
+        font-family: "Segoe UI", Arial, sans-serif;
+        color: #2c2c2c;
+        margin: 0;
+        padding: 0;
+    }
 
-                    <p class="text-muted">
-                        En PersonAPI, nos tomamos muy en serio la privacidad de los usuarios. Esta página explica cómo recopilamos, utilizamos, almacenamos y protegemos tu información personal cuando interactúas con nuestro sitio o aplicación.
-                    </p>
+    .privacy-container {
+        width: 800px;
+        margin: 60px auto;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        padding: 40px 50px;
+    }
 
-                    <h5 class="mt-4">1. Datos que recopilamos</h5>
-                    <ul>
-                        <li>Nombre completo, correo electrónico y otros datos de contacto.</li>
-                        <li>Información académica y profesional (para gestión de entidades).</li>
-                        <li>Registros técnicos como direcciones IP, navegador, etc.</li>
-                    </ul>
+    h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        color: #1e3a5f;
+        border-bottom: 2px solid #1e3a5f;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
 
-                    <h5 class="mt-4">2. Cómo usamos tu información</h5>
-                    <p>Usamos los datos exclusivamente para:</p>
-                    <ul>
-                        <li>Gestionar la plataforma y brindar sus funcionalidades.</li>
-                        <li>Mejorar la experiencia del usuario.</li>
-                        <li>Dar soporte técnico y comunicarnos contigo si es necesario.</li>
-                    </ul>
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #444;
+    }
 
-                    <h5 class="mt-4">3. Protección de datos</h5>
-                    <p>
-                        Implementamos medidas de seguridad técnicas y organizativas para proteger tu información frente a accesos no autorizados, pérdidas o alteraciones.
-                    </p>
+    ul {
+        margin: 10px 0 20px 25px;
+        color: #444;
+    }
 
-                    <h5 class="mt-4">4. Derechos del usuario</h5>
-                    <p>Tienes derecho a acceder, modificar o eliminar tus datos. Puedes contactarnos para ejercer estos derechos en cualquier momento.</p>
+    li {
+        margin-bottom: 8px;
+    }
 
-                    <h5 class="mt-4">5. Contacto</h5>
-                    <p>Si tienes preguntas sobre esta política, escríbenos a: <a href="mailto:soporte@personapi.com">soporte@personapi.com</a></p>
+    h5 {
+        font-size: 18px;
+        color: #1e3a5f;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
 
-                    <p class="text-end mt-4"><small class="text-muted">Última actualización: mayo 2025</small></p>
-                </div>
-            </div>
-        </div>
+    a {
+        color: #0b5ed7;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    small {
+        color: #777;
+        font-size: 13px;
+    }
+
+    .footer-note {
+        text-align: right;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="privacy-container">
+    <h2>@ViewData["Title"]</h2>
+
+    <p>
+        En <strong>PersonAPI</strong>, valoramos tu privacidad y nos comprometemos a proteger tu información personal.
+        Esta política explica cómo recopilamos, usamos y resguardamos tus datos cuando interactúas con nuestro sitio o aplicación.
+    </p>
+
+    <h5>1. Datos que recopilamos</h5>
+    <ul>
+        <li>Nombre completo, correo electrónico y datos de contacto.</li>
+        <li>Información académica o profesional usada para la gestión de entidades.</li>
+        <li>Datos técnicos como dirección IP y tipo de navegador.</li>
+    </ul>
+
+    <h5>2. Cómo usamos tu información</h5>
+    <p>Utilizamos los datos con el fin de:</p>
+    <ul>
+        <li>Operar y mantener las funcionalidades del sistema.</li>
+        <li>Mejorar tu experiencia como usuario.</li>
+        <li>Brindar soporte técnico y comunicarnos contigo cuando sea necesario.</li>
+    </ul>
+
+    <h5>3. Protección de datos</h5>
+    <p>
+        Implementamos medidas de seguridad tanto técnicas como organizativas para evitar el acceso no autorizado,
+        la pérdida o modificación de la información personal.
+    </p>
+
+    <h5>4. Derechos del usuario</h5>
+    <p>
+        Puedes solicitar el acceso, modificación o eliminación de tus datos personales.
+        Si deseas ejercer estos derechos, contáctanos a través del correo indicado abajo.
+    </p>
+
+    <h5>5. Contacto</h5>
+    <p>
+        Si tienes preguntas o solicitudes sobre esta política, escríbenos a:
+        <a href="mailto:soporte@personapi.com">soporte@personapi.com</a>
+    </p>
+
+    <div class="footer-note">
+        <small>Última actualización: mayo 2025</small>
     </div>
 </div>

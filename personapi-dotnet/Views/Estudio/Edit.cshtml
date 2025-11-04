@@ -4,35 +4,24 @@
     ViewData["Title"] = "Editar Estudio";
 }
 
-<h1 class="mb-4 text-warning">Editar Estudio</h1>
+<div class="form-box">
+    <h1 style="color:#d47d17;">Editar Estudio</h1>
 
-<div class="card shadow p-4">
     <form asp-action="Edit">
-        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
         <input type="hidden" asp-for="IdProf" />
         <input type="hidden" asp-for="CcPer" />
 
-        <div class="mb-3">
-            <label asp-for="Fecha" class="form-label"></label>
-            <input asp-for="Fecha" type="date" class="form-control" />
-            <span asp-validation-for="Fecha" class="text-danger"></span>
-        </div>
+        <label asp-for="Fecha">Fecha</label>
+        <input asp-for="Fecha" type="date" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
 
-        <div class="mb-3">
-            <label asp-for="Univer" class="form-label"></label>
-            <input asp-for="Univer" class="form-control" />
-            <span asp-validation-for="Univer" class="text-danger"></span>
-        </div>
+        <label asp-for="Univer">Universidad</label>
+        <input asp-for="Univer" />
+        <span asp-validation-for="Univer" class="text-danger"></span>
 
-        <div class="d-flex justify-content-between mt-4">
-            <button type="submit" class="btn btn-primary">Guardar</button>
-            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        <div class="actions">
+            <button type="submit" class="btn-primary">Guardar</button>
+            <a asp-action="Index" class="btn-secondary">Cancelar</a>
         </div>
     </form>
 </div>
-
-@section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-}

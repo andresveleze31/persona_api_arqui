@@ -1,22 +1,19 @@
 @model personapi_dotne.Models.Entities.Profesion
 
 @{
-    ViewData["Title"] = "Detalles de Profesi�n";
+    ViewData["Title"] = "Detalles de la Profesión";
 }
 
-<h1 class="mb-4 text-info">Detalles de Profesi�n</h1>
+<section style="background:#eef2ff; padding:2rem; border-radius:1rem; max-width:800px; margin:auto;">
+    <h2 style="color:#3b82f6; text-align:center;">📘 Detalles de la Profesión</h2>
 
-<div class="card shadow p-4">
-    <dl class="row">
-        <dt class="col-sm-3">Nombre</dt>
-        <dd class="col-sm-9">@Model.Nom</dd>
-
-        <dt class="col-sm-3">Descripci�n</dt>
-        <dd class="col-sm-9">@Model.Des</dd>
-    </dl>
-
-    <div class="d-flex justify-content-between mt-4">
-        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Editar</a>
-        <a asp-action="Index" class="btn btn-secondary">Volver</a>
+    <div style="background:white; border-radius:0.5rem; padding:1.5rem; margin-top:1rem;">
+        <p><strong>Nombre:</strong> <span>@Model.Nom</span></p>
+        <p><strong>Descripción:</strong> <span>@Model.Des</span></p>
     </div>
-</div>
+
+    <div style="display:flex; justify-content:space-between; margin-top:1.5rem;">
+        <a asp-action="Edit" asp-route-id="@Model.Id" style="background:#0d6efd; color:white; padding:0.6rem 1.2rem; border-radius:0.5rem; text-decoration:none;">✏️ Editar</a>
+        <a asp-action="Index" style="background:#6c757d; color:white; padding:0.6rem 1.2rem; border-radius:0.5rem; text-decoration:none;">↩️ Volver</a>
+    </div>
+</section>
