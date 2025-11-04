@@ -14,20 +14,13 @@ Una aplicación ASP.NET MVC + Web API para gestionar información de personas, t
 ### ✅ Opción 1: Clonar desde GitHub
 
 ```bash
-git clone https://github.com/rasamuel/personapi-dotnet.git
+git clone https://github.com/andresveleze31/persona_api_arqui.git
 # Para acceder a la carpeta del proyecto
 cd personapi-dotnet
 # Para acceder a la carpeta del código
 cd personapi_dotnet
 ```
 
-
-```bash
-# Para acceder a la carpeta del proyecto
-cd personapi-dotnet-entrega
-# Para acceder a la carpeta del código
-cd personapi_dotnet
-```
 
 1. **Inicia los contenedores con Docker Compose:**
 
